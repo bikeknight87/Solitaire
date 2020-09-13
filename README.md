@@ -1,1 +1,2 @@
-#S olitaire
+#Solitaire 
+the classic card game
