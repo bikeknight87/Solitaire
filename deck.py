@@ -66,11 +66,19 @@ class Deck:
     # Return the Card on top of this deck without removing it from the deck.
     def getTopCard(self):
         if not self.cards:
-            print('empty')
-            return
+            #print('Empty')
+            return None
         else:
-            self.cards[-1].printCard()
+            #self.cards[-1].printCard()
             return self.cards[-1]
+
+    def getBottomCard(self):
+        if not self.cards:
+            return None
+        else:
+            self.cards[0].printCard()
+            return self.cards[0]
+        
 
     # Turn over the top card of this deck
     def turnTopCard(self):
