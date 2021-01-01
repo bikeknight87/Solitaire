@@ -8,6 +8,7 @@ class Card:
         self.rank = rank
         self.suit = suit
         self.face = False
+        self.image = None
 
     # Turn a card to a given face.
     def turn(self, face):
@@ -87,7 +88,7 @@ class Deck:
 
     # Create a traditional Fifty Two card deck
     def fiftyTwo(self):
-        suits = ('Spades','Hearts','Clubs','Diamonds')
+        suits = ('Leaves','Acorns','Hearts','Bells')
         ranks = ('King','Queen','Jack','10','9','8','7','6','5','4','3','2','Ace')
         for s in suits:
             for r in ranks:
